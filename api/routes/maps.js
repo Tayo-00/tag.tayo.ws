@@ -13,4 +13,10 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/:id', function(req, res, next) {
+  MapsModel.getMap(req.params.id, function(response) {
+    return res.status(response.status).send(response.data);
+  });
+});
+
 module.exports = router;
