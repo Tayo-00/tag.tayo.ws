@@ -9,7 +9,7 @@
 // @import "type";
 // @import "images";
 // @import "code";
-// @import "grid";
+@import "grid";
 // @import "tables";
 // @import "forms";
 @import "buttons";
@@ -34,7 +34,7 @@
 // @import "tooltip";
 // @import "popover";
 // @import "carousel";
-// @import "utilities";
+@import "utilities";
 
 // Custom imports
 @import './variables';
@@ -49,4 +49,12 @@
 .navbar-brand {
   font-weight: $font-weight-heavy !important;
   font-size: 1.5rem;
+}
+
+body {
+  background-color: $bg-light;
+}
+
+html, body {
+  height: 100%;
 }

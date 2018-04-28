@@ -1,10 +1,10 @@
 <ngx-loading-bar [includeSpinner]="false"></ngx-loading-bar>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark drop-shadow">
   <a class="navbar-brand" href="/home">TAG COMMUNITY</a>
   <button class="btn btn-sm btn-outline-dark" (click)="toggleSidebar()">
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse">
     <ng-container *ngTemplateOutlet="navbarItems">
     </ng-container>
   </div>
@@ -17,9 +17,21 @@
 </div>
 <ng-template #navbarItems>
   <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/maps">MAPS</a>
-      </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/maps">MAPS</a>
+    </li>
   </ul>
 </ng-template>
-<router-outlet></router-outlet>
+<div class="container drop-shadow">
+  <div class="row justify-content-start">
+    <router-outlet></router-outlet>
+    <div class="footer drop-shadow">
+      <p>
+        <span class="responsive-footer">Lesley van der Lee (l.lee@tayo.ws) -</span>
+        <a>Discord</a> -
+        <a>GitHub</a> -
+        <a>Donate</a>
+      </p>
+    </div>
+  </div>
+</div>

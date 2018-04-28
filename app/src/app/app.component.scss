@@ -12,6 +12,10 @@ a {
     display: block;
 }
 
+.navbar {
+    background-color: $bg-dark !important;
+}
+
 .sidebar {
     transition: 0.5s ease all;
     background-color: $bg-dark;
@@ -40,11 +44,47 @@ a {
     min-width: 180px !important;
 }
 
+.container {
+    width: 100%;
+    max-width: 992px;
+    min-height: calc(100% - 102px);
+    background-color: $white;
+}
+
+.footer {
+    position: absolute !important;
+    bottom: 0px !important;
+    max-width: 992px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: $bg-dark;
+    color: $bg-light;
+    p {
+        margin: 0;
+    }
+}
+
+.drop-shadow {
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+}
+
+.responsive-footer {
+    display: none;
+}
+
 @media (min-width: 992px){
     .btn {
         display: none;
     }
     .sidebar {
         display: none;
+    }
+    .responsive-footer {
+        display: inline-block;
     }
 }
