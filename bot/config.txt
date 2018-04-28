@@ -1,0 +1,5 @@
+DiscordToken:""
+OsuIRCToken:""
+WebAPIKey:""
+OsuAPIKey:""
+UseTagAPI:"true"
