@@ -10,7 +10,7 @@ CREATE TABLE maps (
     artist      varchar NOT NULL,
     difficulty  varchar NOT NULL,
     notelock    boolean,
-    date_added  date
+    date_added  timestamp WITHOUT time zone DEFAULT now()
 );
 
 INSERT INTO maps (mapset_id, map_id, players, combined_sr, player_sr, title, mapper, artist, difficulty, notelock) VALUES
