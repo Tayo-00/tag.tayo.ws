@@ -1,6 +1,6 @@
 <ngx-loading-bar [includeSpinner]="false"></ngx-loading-bar>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="/home/">TAG COMMUNITY</a>
+  <a class="navbar-brand" href="/home">TAG COMMUNITY</a>
   <button class="btn btn-sm btn-outline-dark" (click)="toggleSidebar()">
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
   </button>
@@ -9,15 +9,17 @@
     </ng-container>
   </div>
 </nav>
-<div class="sidebar animate-show-hide" *ngIf="sidebarHidden">
-  <ng-container *ngTemplateOutlet="navbarItems">
-  </ng-container>
+<div class="sidebar ng-leave" id="sidebar">
+  <div class="sidebar-margin">
+    <ng-container *ngTemplateOutlet="navbarItems">
+    </ng-container>
+  </div>
 </div>
 <ng-template #navbarItems>
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="/maps/">MAPS</a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/maps">MAPS</a>
+      </li>
   </ul>
 </ng-template>
 <router-outlet></router-outlet>

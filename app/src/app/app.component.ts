@@ -6,13 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  sidebarHidden = true;
+  sidebarShowing = false;
 
   toggleSidebar() {
-    if (this.sidebarHidden) {
-      this.sidebarHidden = false;
+    const sidebar = document.getElementById('sidebar').classList;
+    if (this.sidebarShowing) {
+      sidebar.add('ng-leave');
+      sidebar.remove('ng-enter');
+      this.sidebarShowing = false;
     } else {
-      this.sidebarHidden = true;
+      sidebar.add('ng-enter');
+      sidebar.remove('ng-leave');
+      this.sidebarShowing = true;
     }
   }
 }

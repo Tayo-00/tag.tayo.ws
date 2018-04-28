@@ -13,35 +13,33 @@ a {
 }
 
 .sidebar {
+    transition: 0.5s ease all;
     background-color: $bg-dark;
     position: fixed;
     top: 62px;
     bottom: 0px;
     right: 0px;
     min-width: 200px;
-    width: auto;
-    padding: 0.5rem;
+    width: 0px;
     display: block;
 }
 
 .sidebar.ng-enter {
-    transition: 0.5s ease all;
-    width: 0px;
-}
-
-.sidebar.ng-enter.ng-enter-active {
     min-width: 180px;
-    width: auto;
+    // width: auto !important;
 }
 
-.fade.ng-leave {
-    transition: 0.5s ease all;
-    min-width: 180px;
-    width: auto;
+.sidebar.ng-leave {
+    min-width: 0px !important;
+    width: 0px !important;
 }
 
-.fade.ng-leave.ng-leave-active {
-    width: 0px;
+.sidebar-margin {
+    margin: 0.5rem;
+}
+
+.nav-item {
+    min-width: 180px !important;
 }
 
 @media (min-width: 992px){
