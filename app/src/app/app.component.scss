@@ -19,14 +19,12 @@ a {
     top: 62px;
     bottom: 0px;
     right: 0px;
-    min-width: 200px;
     width: 0px;
     display: block;
 }
 
 .sidebar.ng-enter {
-    min-width: 180px;
-    // width: auto !important;
+    min-width: 200px;
 }
 
 .sidebar.ng-leave {
