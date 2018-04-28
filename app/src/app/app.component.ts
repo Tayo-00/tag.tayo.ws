@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  sidebarHidden = true;
+
+  toggleSidebar() {
+    if (this.sidebarHidden) {
+      this.sidebarHidden = false;
+    } else {
+      this.sidebarHidden = true;
+    }
+  }
 }

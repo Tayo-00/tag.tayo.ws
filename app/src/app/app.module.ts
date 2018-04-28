@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
@@ -17,6 +18,7 @@ import { MapsModule } from './maps/maps.module';
     NgbModule.forRoot(),
     LoadingBarRouterModule,
     BrowserModule,
+    CommonModule,
     HomeModule,
     MapsModule,
     AppRoutingModule

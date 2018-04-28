@@ -1,16 +1,52 @@
-// Bootstrap imports
+@import "../assets/css/glyphicons.min.css";
+
+// All Bootstrap imports, un-comment where needed
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-
-@import "node_modules/bootstrap/scss/reboot";
-@import "node_modules/bootstrap/scss/type";
-@import "node_modules/bootstrap/scss/images";
-@import "node_modules/bootstrap/scss/code";
-@import "node_modules/bootstrap/scss/grid";
+// @import "print";
+@import "reboot";
+// @import "type";
+// @import "images";
+// @import "code";
+// @import "grid";
+// @import "tables";
+// @import "forms";
+@import "buttons";
+@import "transitions";
+// @import "dropdown";
+// @import "button-group";
+// @import "input-group";
+// @import "custom-forms";
+@import "nav";
+@import "navbar";
+// @import "card";
+// @import "breadcrumb";
+// @import "pagination";
+// @import "badge";
+// @import "jumbotron";
+// @import "alert";
+// @import "progress";
+// @import "media";
+// @import "list-group";
+// @import "close";
+// @import "modal";
+// @import "tooltip";
+// @import "popover";
+// @import "carousel";
+// @import "utilities";
 
 // Custom imports
 @import './variables';
 @import './mixins';
 @import './colors';
 @import './fonts';
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+.navbar-brand {
+  font-weight: $font-weight-heavy !important;
+  font-size: 1.5rem;
+}

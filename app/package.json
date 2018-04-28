@@ -25,6 +25,7 @@
     "@ngx-loading-bar/router": "^1.6.0",
     "bootstrap": "^4.1.0",
     "core-js": "^2.4.1",
+    "glyphicons-only-bootstrap": "^1.0.1",
     "hoek": "^5.0.3",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
